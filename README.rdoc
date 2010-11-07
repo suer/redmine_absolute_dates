@@ -1,17 +1,17 @@
 = absolute_dates
 This Plugin support Japanese environment only!
 
-= $B5!G=(B
-Redmine$B$N%A%1%C%H$N:n@.F|!"99?7F|$O%G%U%)%k%H$G$O(B
-$B!V:#F|!W$+$i$NAjBPE*$JF|;~?t$GI=<($5$l$^$9!#(B
-(...$BF|A0$J$I(B)
-$B$3$N%W%i%0%$%s$O$3$NF|IU$rDL>o$NF|IU(B(yyyy/MM/dd)$B$GI=<($7$^$9!#(B
+= 機能
+Redmineのチケットの作成日、更新日はデフォルトでは
+「今日」からの相対的な日時数で表示されます。
+(...日前など)
+このプラグインはこの日付を通常の日付(yyyy/MM/dd)で表示します。
 
-= $B%$%s%9%H!<%k(B
-1. Redmine$B$N%$%s%9%H!<%k%G%#%l%/%H%j$K$F(B
+= インストール
+1. Redmineのインストールディレクトリにて
    $ git://github.com/suer/redmine_absolute_dates.git
-2. Redmine $B$N:F5/F0(B
+2. Redmine の再起動
 
-= $B%i%$%;%s%9(B
-MIT$B%i%$%;%s%9$H$7$^$9(B
+= ライセンス
+MITライセンスとします
 
