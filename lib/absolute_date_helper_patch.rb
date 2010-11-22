@@ -17,7 +17,7 @@ module AbsoluteDateHelperPatch
     def time_tag_with_absolute_date(time)
       text = format_date(time)
       if @project
-        link_to(text, {:controller => 'projects', :action => 'activity', :id => @project, :from => time.to_date}, :title => text)
+        link_to(text, {:controller => 'activities', :action => 'index', :id => @project, :from => time.to_date}, :title => text)
       else
         content_tag('acronym', text, :title => text)
       end
