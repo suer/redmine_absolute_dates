@@ -16,10 +16,11 @@ module AbsoluteDateHelperPatch
 
     def time_tag_with_absolute_date(time)
       text = format_date(time)
+      tip_text = format_time(time)
       if @project
-        link_to(text, {:controller => 'activities', :action => 'index', :id => @project, :from => time.to_date}, :title => text)
+        link_to(text, {:controller => 'activities', :action => 'index', :id => @project, :from => time.to_date}, :title => tip_text)
       else
-        content_tag('acronym', text, :title => text)
+        content_tag('acronym', text, :title => tip_text)
       end
     end
 
