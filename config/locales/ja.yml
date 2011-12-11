@@ -1,4 +1,4 @@
 ja:
-  label_added_absolute_time_by: "{{author}} が{{age}}に追加"
-  label_updated_time: "{{value}}に更新"
-  label_updated_time_by: "{{author}} が{{age}}に更新"
+  label_added_absolute_time_by: "%{author} が%{age}に追加"
+  label_updated_time: "%{value}に更新"
+  label_updated_time_by: "%{author} が%{age}に更新"
