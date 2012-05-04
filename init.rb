@@ -1,8 +1,8 @@
 require 'redmine'
 
-require 'dispatcher'
+#require 'dispatcher'
 
-Dispatcher.to_prepare :redmine_absolute_dates do
+Rails.configuration.to_prepare do
   require_dependency 'application_helper'
   ApplicationHelper.send(:include, AbsoluteDateHelperPatch) 
 end

@@ -11,16 +11,16 @@ module AbsoluteDateHelperPatch
   module InstanceMethods
     # Adds a rates tab to the user administration page
     def authoring_with_absolute_date(created, author, options={})
-      l(options[:label] || :label_added_absolute_time_by, :author => link_to_user(author), :age => time_tag(created))
+      l(options[:label] || :label_added_absolute_time_by, :author => link_to_user(author), :age => time_tag(created)).html_safe
     end
 
     def time_tag_with_absolute_date(time)
       text = format_date(time)
       tip_text = format_time(time)
       if @project
-        link_to(text, {:controller => 'activities', :action => 'index', :id => @project, :from => time.to_date}, :title => tip_text)
+        link_to(text, {:controller => 'activities', :action => 'index', :id => @project, :from => time.to_date}, :title => tip_text).html_safe
       else
-        content_tag('acronym', text, :title => tip_text)
+        content_tag('acronym', text, :title => tip_text).html_safe
       end
     end
 
