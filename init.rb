@@ -1,7 +1,5 @@
 require 'redmine'
 
-#require 'dispatcher'
-
 Rails.configuration.to_prepare do
   require_dependency 'application_helper'
   ApplicationHelper.send(:include, AbsoluteDateHelperPatch)
